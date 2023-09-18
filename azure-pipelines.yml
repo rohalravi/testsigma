@@ -7,13 +7,13 @@ pool:
 jobs:
 - job: Exicute_test
   steps:
-  - task: Bash@3
-    inputs:
-	filePath: './cicd-api.sh'
+	- task: Bash@3
+    	  inputs:
+		filePath: './cicd-api.sh'
 
-  - task: PublishTestResults@2  
-    displayName: 'publish testsigma test results'  
-    inputs:    
-	testResultsFormat: 'Junit'// Test Result Format   
-	testResultsFiles: '**/junit-report.xml' //Result File Type
+  	- task: PublishTestResults@2  
+    	  displayName: 'publish testsigma test results'  
+    	  inputs:    
+		testResultsFormat: 'Junit'// Test Result Format   
+		testResultsFiles: '**/junit-report.xml' //Result File Type
         
