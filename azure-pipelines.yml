@@ -5,7 +5,7 @@ trigger:
 
 pool:
 
-  name: testpool
+  name: ubuntu-latest
 
 jobs:
 
