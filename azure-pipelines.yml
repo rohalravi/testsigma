@@ -10,7 +10,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 //Settings
-- task: Bash@3 
+- task: Bash@3
   inputs:    
     filePath: './cicd-api.sh' //Generic Shell Script file
 //Settings
