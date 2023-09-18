@@ -12,7 +12,7 @@ steps:
 //Settings
 - task: Bash@3 
   inputs:    
-    filePath: './cicd-api.sh' //Generic Shell Script file
+    #filePath: './cicd-api.sh' //Generic Shell Script file
 //Settings
 - task: PublishTestResults@2  
   displayName: 'publish testsigma test results'  
