@@ -16,6 +16,6 @@ steps:
 //Settings
 - task: PublishTestResults@2  
   displayName: 'publish testsigma test results'  
-inputs:    
-  testResultsFormat: 'Junit'// Test Result Format   
-  testResultsFiles: '**/junit-report.xml' //Result File Type
+  inputs:    
+    testResultsFormat: 'Junit'// Test Result Format   
+    testResultsFiles: '**/junit-report.xml' //Result File Type
