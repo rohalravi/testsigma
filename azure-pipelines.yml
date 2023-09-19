@@ -4,7 +4,7 @@ trigger:
 
 pool:
 
-  name: ubuntu-latest
+  name: Default
 
 jobs:
 
