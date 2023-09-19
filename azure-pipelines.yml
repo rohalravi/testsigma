@@ -1,7 +1,10 @@
-
 trigger:
 
 - main
+
+pool:
+
+  name: ubuntu-latest
 
 jobs:
 
@@ -14,3 +17,11 @@ jobs:
       inputs:
 
        filePath: './cicd-api.sh' 
+
+    - task: PublishTestResults@2
+
+      inputs:
+
+       testResultsFormat: 'Junit'
+
+       testResultsFiles: '**/junit-report.xml' 
