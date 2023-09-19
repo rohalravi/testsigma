@@ -3,10 +3,6 @@ trigger:
 
 - main
 
-pool:
-
-  vmImage: ubuntu-latest
-
 jobs:
 
 - job: Exicute_test
